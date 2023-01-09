@@ -24,12 +24,14 @@ export default function CommentUser({ courseId }) {
           detail: content,
         },
       ]);
+      setContent("");
+      setScore("");
     }
   }
   return (
     <div
       class={`${
-        comment.filter((item) => item.course_id == courseId).length
+        user && comment.filter((item) => item.course_id == courseId).length
           ? "hidden"
           : "flex"
       } w-[800px] max-w-full items-center justify-center shadow-lg mb-4`}
