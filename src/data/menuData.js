@@ -27,6 +27,21 @@ const data = [
           },
         ],
       },
+      {
+        isPost: true,
+        title1: "bài viết",
+        item1: [
+          {
+            title2: "",
+            item2: [
+              {
+                text: "",
+                link: "#",
+              },
+            ],
+          },
+        ],
+      },
     ],
   },
   {
@@ -52,6 +67,21 @@ const data = [
                 text: "toeic",
                 link: "#",
                 id: 6,
+              },
+            ],
+          },
+        ],
+      },
+      {
+        isPost: true,
+        title1: "bài viết",
+        item1: [
+          {
+            title2: "",
+            item2: [
+              {
+                text: "",
+                link: "#",
               },
             ],
           },
@@ -128,29 +158,14 @@ const data = [
         ],
       },
       {
-        title1: "tài liệu",
+        isPost: true,
+        title1: "bài viết",
         item1: [
           {
-            title2: "tất cả tài liệu",
+            title2: "",
             item2: [
               {
-                text: "toán",
-                link: "#",
-              },
-              {
-                text: "vật lý",
-                link: "#",
-              },
-              {
-                text: "hóa học",
-                link: "#",
-              },
-              {
-                text: "văn học",
-                link: "#",
-              },
-              {
-                text: "tiếng anh",
+                text: "",
                 link: "#",
               },
             ],
@@ -257,6 +272,21 @@ const data = [
           },
         ],
       },
+      {
+        isPost: true,
+        title1: "bài viết",
+        item1: [
+          {
+            title2: "",
+            item2: [
+              {
+                text: "",
+                link: "#",
+              },
+            ],
+          },
+        ],
+      },
     ],
   },
   {
@@ -352,6 +382,21 @@ const data = [
                 text: "tiếng việt",
                 link: "#",
                 id: 42,
+              },
+            ],
+          },
+        ],
+      },
+      {
+        isPost: true,
+        title1: "bài viết",
+        item1: [
+          {
+            title2: "",
+            item2: [
+              {
+                text: "",
+                link: "#",
               },
             ],
           },

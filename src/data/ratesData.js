@@ -910,7 +910,7 @@ const ratesData = [
   {
     user_id: 2,
     course_id: 13,
-    score: 8,
+    score: 9,
     detail: "kiến thức bổ ích nhưng chất lượng video không được tốt cho lắm",
   },
   {

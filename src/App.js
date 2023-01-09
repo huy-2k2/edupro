@@ -2,6 +2,7 @@ import HomePage from "./pages/HomePage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CourseLinePage from "./pages/CourseLinePage";
 import CourseDetailPage from "./pages/CourseDetailPage";
+import PostPage from "./pages/PostPage";
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +16,7 @@ function App() {
           path="/course/:courseId"
           element={<CourseDetailPage></CourseDetailPage>}
         ></Route>
+        <Route path="/post/:post_type" element={<PostPage></PostPage>}></Route>
       </Routes>
     </BrowserRouter>
   );

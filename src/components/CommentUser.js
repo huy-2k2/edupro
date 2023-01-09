@@ -58,8 +58,7 @@ export default function CommentUser({ courseId }) {
             />
           </div>
           <div class="w-full flex items-start md:w-full px-3">
-            <div class="flex items-start w-1/2 text-gray-700 px-2 mr-auto"></div>
-            <div class="-mr-1">
+            <div class="flex justify-end w-full">
               <button
                 onClick={handleSubmit}
                 class={`${

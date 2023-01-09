@@ -1,11 +1,10 @@
-import React, { Children, Fragment, useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, redirect } from "react-router-dom";
 import data from "../data/menuData";
 
 export default function Menu({ setMenuClick }) {
   const [index, setIndex] = useState(-1);
   const [indexChild, setIndexChild] = useState(0);
-
   return (
     <div className="flex items-stretch justify-start">
       <div className="min-w-[300px] shadow-md">
@@ -47,17 +46,27 @@ export default function Menu({ setMenuClick }) {
           return current_index === index ? (
             <div className="absolute w-full min-h-full border-l-primary border-l-[5px] shadow-lg bg-white">
               <div className="flex items-center justify-start border border-transparent gap-x-3 border-b-gray-300">
-                {data1.item.map((data2, current_index) => (
-                  <div
-                    onClick={() => setIndexChild(current_index)}
-                    className="relative px-3 py-2 font-semibold text-white uppercase cursor-pointer bg-primary rounded-tl-md rounded-tr-md"
-                  >
-                    <div>{data2.title1}</div>
-                    {indexChild === current_index && (
-                      <div className="absolute top-full left-1/2 -translate-x-1/2 border-[10px] border-b-0 border-transparent border-t-primary"></div>
-                    )}
-                  </div>
-                ))}
+                {data1.item.map((data2, _current_index) =>
+                  data2.isPost ? (
+                    <Link
+                      to={`/post/${current_index}`}
+                      onClick={() => setMenuClick(false)}
+                      className="relative px-3 py-2 font-semibold text-white uppercase cursor-pointer bg-primary rounded-tl-md rounded-tr-md"
+                    >
+                      <div>{data2.title1}</div>
+                    </Link>
+                  ) : (
+                    <div
+                      onClick={() => setIndexChild(_current_index)}
+                      className="relative px-3 py-2 font-semibold text-white uppercase cursor-pointer bg-primary rounded-tl-md rounded-tr-md"
+                    >
+                      <div>{data2.title1}</div>
+                      {indexChild === _current_index && (
+                        <div className="absolute top-full left-1/2 -translate-x-1/2 border-[10px] border-b-0 border-transparent border-t-primary"></div>
+                      )}
+                    </div>
+                  )
+                )}
               </div>
               {data1.item.map((data2, current_index) => {
                 return indexChild === current_index

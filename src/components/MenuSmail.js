@@ -58,18 +58,32 @@ export default function MenuSmail({ setMenuClick }) {
         {index !== -1 && (
           <div>
             <div className="flex items-center justify-start px-5 py-2 border-t border-b gap-x-4">
-              {data[index].item.map((data2, current_index) => (
-                <div
-                  onClick={() => setChildIndex(current_index)}
-                  className={`px-4 py-2 text-sm font-semibold min-w-[150px]  capitalize flex items-center justify-center rounded-md ${
-                    current_index === childIndex
-                      ? "text-white bg-[#28b1ff]"
-                      : "text-gray-600 bg-gray-200"
-                  } cursor-pointer`}
-                >
-                  {data2.title1}
-                </div>
-              ))}
+              {data[index].item.map((data2, _current_index) =>
+                data2.isPost ? (
+                  <Link
+                    onClick={() => setMenuClick(false)}
+                    to={`/post/${index}`}
+                    className={`px-4 py-2 text-sm font-semibold min-w-[150px]  capitalize flex items-center justify-center rounded-md ${
+                      _current_index === childIndex
+                        ? "text-white bg-[#28b1ff]"
+                        : "text-gray-600 bg-gray-200"
+                    } cursor-pointer`}
+                  >
+                    {data2.title1}
+                  </Link>
+                ) : (
+                  <div
+                    onClick={() => setChildIndex(_current_index)}
+                    className={`px-4 py-2 text-sm font-semibold min-w-[150px]  capitalize flex items-center justify-center rounded-md ${
+                      _current_index === childIndex
+                        ? "text-white bg-[#28b1ff]"
+                        : "text-gray-600 bg-gray-200"
+                    } cursor-pointer`}
+                  >
+                    {data2.title1}
+                  </div>
+                )
+              )}
             </div>
             <div>
               <div className="text-[16px] font-semibold px-5 py-3 relative">
