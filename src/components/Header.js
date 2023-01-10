@@ -15,17 +15,17 @@ export default function Header() {
   const [menuToggle, parentRef, childRef, setMenuClick] = useClick();
   const [searchToggle, parentSearchRef, childSearchRef] = useClick();
   const size = useResize();
-  // function responseFacebook(response) {
-  //   const user_temp = {
-  //     name: response.name,
-  //     image: response.picture.data.url,
-  //     id: response.id,
-  //   };
-  //   Cookies.set("user", JSON.stringify(user_temp), {
-  //     expires: COOKIE_EXPIRED_TIME,
-  //   });
-  //   setUser(user_temp);
-  // }
+  function responseFacebook(response) {
+    const user_temp = {
+      name: response.name,
+      image: response.picture.data.url,
+      id: response.id,
+    };
+    Cookies.set("user", JSON.stringify(user_temp), {
+      expires: COOKIE_EXPIRED_TIME,
+    });
+    setUser(user_temp);
+  }
   function handleLoggout() {
     Cookies.remove("user");
     setUser(null);
@@ -112,7 +112,7 @@ export default function Header() {
             </svg>
           </div>
         </div>
-        <div className="flex items-center justify-center ml-auto pointer-events-none gap-x-5">
+        <div className="flex items-center justify-center ml-auto gap-x-5">
           {/* <FacebookLogin
             appId={FACEBOOK_APP_ID}
             autoLoad
