@@ -13,7 +13,7 @@ export default function CommentUser({ courseId }) {
       score &&
       Number.isInteger(Number(score)) &&
       1 <= score &&
-      score <= 9
+      score <= 10
     ) {
       setComment([
         ...comment,

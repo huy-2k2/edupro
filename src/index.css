@@ -2,6 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .grid-autofill {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .path {
+    fill: #fff;
+    d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+  }
+  .card_ard {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    z-index: 1;
+  }
+}
+
 @layer utilities {
   .swiper {
     width: 100%;

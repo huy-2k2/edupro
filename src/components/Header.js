@@ -17,7 +17,7 @@ export default function Header() {
   const size = useResize();
   function responseFacebook(response) {
     const user_temp = {
-      name: response.name.split(" ").pop(),
+      name: response.name,
       image: response.picture.data.url,
       id: response.id,
     };
@@ -138,7 +138,7 @@ export default function Header() {
               />
             </div>
             <div className="text-sm font-semibold text-white">
-              {user ? user.name : "easy edu"}
+              {user ? user.name.split(" ").pop() : "easy edu"}
             </div>
           </Link>
         </div>

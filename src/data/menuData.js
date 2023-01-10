@@ -1,6 +1,6 @@
 const data = [
   {
-    title: "Cho người đi làm",
+    title: "người đã đi làm",
     item: [
       {
         title1: "khóa học",
