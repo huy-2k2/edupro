@@ -15,17 +15,17 @@ export default function Header() {
   const [menuToggle, parentRef, childRef, setMenuClick] = useClick();
   const [searchToggle, parentSearchRef, childSearchRef] = useClick();
   const size = useResize();
-  function responseFacebook(response) {
-    const user_temp = {
-      name: response.name,
-      image: response.picture.data.url,
-      id: response.id,
-    };
-    Cookies.set("user", JSON.stringify(user_temp), {
-      expires: COOKIE_EXPIRED_TIME,
-    });
-    setUser(user_temp);
-  }
+  // function responseFacebook(response) {
+  //   const user_temp = {
+  //     name: response.name,
+  //     image: response.picture.data.url,
+  //     id: response.id,
+  //   };
+  //   Cookies.set("user", JSON.stringify(user_temp), {
+  //     expires: COOKIE_EXPIRED_TIME,
+  //   });
+  //   setUser(user_temp);
+  // }
   function handleLoggout() {
     Cookies.remove("user");
     setUser(null);
@@ -112,8 +112,8 @@ export default function Header() {
             </svg>
           </div>
         </div>
-        <div className="flex items-center justify-center ml-auto gap-x-5">
-          <FacebookLogin
+        <div className="flex items-center justify-center ml-auto pointer-events-none gap-x-5">
+          {/* <FacebookLogin
             appId={FACEBOOK_APP_ID}
             autoLoad
             fields="name,email,picture"
@@ -128,7 +128,14 @@ export default function Header() {
                 {user ? "đăng xuất" : "đăng nhập"}
               </button>
             )}
-          />
+          /> */}
+          <button
+            className={`text-white font-semibold rounded-md px-4 py-2 min-w-[100px] ${
+              user ? "bg-yellow-500" : "bg-green-500"
+            }`}
+          >
+            {user ? "đăng xuất" : "đăng nhập"}
+          </button>
           <Link to="/" className="flex items-center justify-center gap-x-2">
             <div className="w-10">
               <img
