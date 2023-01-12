@@ -145,7 +145,7 @@ export default function Header() {
               />
             </div>
             <div className="text-sm font-semibold text-white">
-              {user ? user.name.split(" ").pop() : "easy edu"}
+              {user ? user.name.split(" ").pop() : "TopEdu"}
             </div>
           </Link>
         </div>
