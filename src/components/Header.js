@@ -15,27 +15,27 @@ export default function Header() {
   const [menuToggle, parentRef, childRef, setMenuClick] = useClick();
   const [searchToggle, parentSearchRef, childSearchRef] = useClick();
   const size = useResize();
-  function responseFacebook(response) {
-    const user_temp = {
-      name: response.name,
-      image: response.picture.data.url,
-      id: response.id,
-    };
-    Cookies.set("user", JSON.stringify(user_temp), {
-      expires: COOKIE_EXPIRED_TIME,
-    });
-    setUser(user_temp);
-  }
-  function handleLoggout() {
-    Cookies.remove("user");
-    setUser(null);
-  }
-  useEffect(() => {
-    if (!user) {
-      const user_cookie = Cookies.get("user");
-      if (user_cookie) setUser(JSON.parse(user_cookie));
-    }
-  }, [user, setUser]);
+  // function responseFacebook(response) {
+  //   const user_temp = {
+  //     name: response.name,
+  //     image: response.picture.data.url,
+  //     id: response.id,
+  //   };
+  //   Cookies.set("user", JSON.stringify(user_temp), {
+  //     expires: COOKIE_EXPIRED_TIME,
+  //   });
+  //   setUser(user_temp);
+  // }
+  // function handleLoggout() {
+  //   Cookies.remove("user");
+  //   setUser(null);
+  // }
+  // useEffect(() => {
+  //   if (!user) {
+  //     const user_cookie = Cookies.get("user");
+  //     if (user_cookie) setUser(JSON.parse(user_cookie));
+  //   }
+  // }, [user, setUser]);
   return (
     <div className="px-5 bg-primary">
       <div className="flex items-center justify-start w-[1100px] max-w-full py-2 relative mx-auto">
@@ -137,7 +137,7 @@ export default function Header() {
             {user ? "đăng xuất" : "đăng nhập"}
           </button>
           <Link to="/" className="flex items-center justify-center gap-x-2">
-            <div className="w-10">
+            <div className="w-10 h-10">
               <img
                 className="object-cover w-full h-full rounded-full"
                 src={user ? user.image : "/images/logo.png"}
