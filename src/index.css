@@ -67,3 +67,17 @@
     object-fit: cover;
   }
 }
+
+@layer components {
+  .custom-scrollbar::-webkit-scrollbar {
+    @apply w-[8px];
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-purple-100;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-purple-400 rounded-full;
+  }
+}

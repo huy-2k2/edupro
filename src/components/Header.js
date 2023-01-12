@@ -134,7 +134,7 @@ export default function Header() {
               user ? "bg-yellow-500" : "bg-green-500"
             }`}
           >
-            {user ? "đăng xuất" : "đăng nhập"}
+            {user ? "Đăng xuất" : "Đăng nhập"}
           </button>
           <Link to="/" className="flex items-center justify-center gap-x-2">
             <div className="w-10 h-10">
@@ -145,7 +145,7 @@ export default function Header() {
               />
             </div>
             <div className="text-sm font-semibold text-white">
-              {user ? user.name.split(" ").pop() : "TopEdu"}
+              {user ? user.name.split(" ").pop() : "EasyEdu"}
             </div>
           </Link>
         </div>

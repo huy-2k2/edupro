@@ -12,18 +12,25 @@ export default function Banner() {
             data={[
               {
                 title: "Mục đích của trang web?",
-                content:
-                  "In pariatur excepteur ut do aliquip qui mollit aliqua exercitation excepteur consequat reprehenderit nostrud laborum voluptate veniam non dolore dolore aliqua incididunt amet nisi minim cillum elit.",
+                contents: [
+                  "website EasyEdu cung cấp cho học sinh, sinh viên, người đi làm những khóa học online hữu ích của các trung tâm đối tác được kiểm duyệt về cả về nội dung và chất lượng. Đồng thời trên website cũng có nhiều bài viết chia sẻ của các diễn giả, giáo sư, tiktoker, blogger, những người truyền cảm hứng, những chuyên gia thuộc nhiều lĩnh vực, khối ngành khác nhau giúp người học dễ dàng định hướng và hoạch định kế hoạch tương lai. Các khóa học bao trùm nhiều khối cấp, lĩnh vực từ cấp tiểu học đến đại học, cao đẳng và người đi làm với nhiều môn học, chuyên ngành như IT, ngôn ngữ,  toán học,...",
+                ],
               },
               {
                 title: "Bạn có cần phải trả phí?",
-                content:
-                  "Dolor esse proident nisi minim nisi aute nulla sed proident magna id eiusmod consectetur laborum aliqua minim excepteur sunt anim anim esse aliquip et ea enim proident veniam veniam quis adipisicing nulla amet id commodo.",
+                contents: ["Nâng cấp tài khoản vip"],
               },
               {
                 title: "Hướng dẫn sử dụng",
-                content:
-                  "Consectetur pariatur proident irure proident ea laboris ut do do quis consequat sed officia dolore consequat ut deserunt ea sit sit culpa.",
+                contents: [
+                  "+ Đăng nhập: Người dùng có thể đăng ký tài khoản bằng số điện thoại/gmail hoặc có thể đăng nhập bằng tài khoản facebook đã có.",
+                  "+ Các khóa học: Các khóa học được phân chia thành các khối cấp, đối tượng khác nhau: Tiểu học, Trung học cơ sở, Trung học Phổ thông, Đại học, Sau đại học. Mỗi khối cấp lại có nhiều khóa học online thuộc các môn học các nhau của các Trung tâm là đối tác của dự án. Đặc biệt trong giai đoạn 1 này, dự án tập trung kết nối, hợp tác với các Trung tâm dành cho các em học sinh Tiểu học, Trung học cơ sở, Trung học phổ thông. ",
+                  "+ Đánh dấu và chọn khóa học: Người dùng có thể tham khảo toàn bộ các khóa học bằng cách ấn xem “Chi tiết” của mỗi khóa học và thêm vào bộ sưu tập tham khảo khóa học bằng cách ấn nút “Yêu thích” của từng khóa.",
+                  "+ Đánh dấu và chọn khóa học: Người dùng có thể tham khảo toàn bộ các khóa học bằng cách ấn xem “Chi tiết” của mỗi khóa học và thêm vào bộ sưu tập tham khảo khóa học bằng cách ấn nút “Yêu thích” của từng khóa.",
+                  "+ Đăng bài: Tại đây, diễn giả có thể đăng tải những bài viết review hoặc chia sẻ kinh nghiệm về học tập, ôn thi hay những tài liệu hay bổ ích. ",
+                  "+ Đăng bài: Tại đây, diễn giả có thể đăng tải những bài viết review hoặc chia sẻ kinh nghiệm về học tập, ôn thi hay những tài liệu hay bổ ích. ",
+                  "+ Nhận xét của học viên sau khi đã học xong các khóa học: Khách hàng sau khi đã học xong khóa học, có thể nhận xét ngay dưới khóa học như review hay feedback. Đồng thời, những người dùng khác cũng có thể vào xem những nhận xét đó để tham khảo và lựa chọn các khóa học phù hợp với mình nhất.",
+                ],
               },
             ]}
           ></AccordionBase>

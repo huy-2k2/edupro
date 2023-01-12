@@ -17,7 +17,11 @@ export default function AccordionBase({ data }) {
               <AccordionItemButton>{item.title}</AccordionItemButton>
             </AccordionItemHeading>
             <AccordionItemPanel>
-              <p className="font-semibold text-gray-600">{item.content}</p>
+              <div className="custom-scrollbar custom-scollbar flex flex-col gap-y-2 font-semibold text-gray-600 max-h-[220px] overflow-y-auto">
+                {item.contents.map((content) => (
+                  <p>{content}</p>
+                ))}
+              </div>
             </AccordionItemPanel>
           </AccordionItem>
         ))}
