@@ -63,11 +63,13 @@ export default function Banner() {
           style={{ backgroundImage: `url("images/banner/banner_bg.png")` }}
         >
           <div className="flex items-center justify-center gap-x-3">
-            <img
-              className="w-[50px] sm:w-auto max-h-full object-cover"
-              src="images/tradition.png"
-              alt=""
-            />
+            <div className="w-[50px]">
+              <img
+                className="object-cover w-full max-h-full sm:w-auto"
+                src="images/tradition.jpg"
+                alt=""
+              />
+            </div>
             <div className="flex flex-col text-[10px] text-white sm:text-lg">
               <div className="font-bold">16 năm</div>
               <div className="font-semibold">Giáo dục trực tuyến</div>
