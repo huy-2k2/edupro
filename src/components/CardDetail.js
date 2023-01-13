@@ -73,7 +73,7 @@ export default function CardDetail({ courseId }) {
           className={`${
             favorite.filter((item) => item.id == courseId).length
               ? "bg-gray-600"
-              : "bg-pink-500 "
+              : "bg-dark-primary "
           } w-full px-5 py-2 mt-3 ml-auto rounded-md sm:w-auto text-white`}
         >
           {favorite.filter((item) => item.id == courseId).length
