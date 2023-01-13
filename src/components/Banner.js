@@ -70,9 +70,9 @@ export default function Banner() {
                 alt=""
               />
             </div>
-            <div className="flex flex-col text-[10px] text-white sm:text-lg">
-              <div className="font-bold">16 năm</div>
-              <div className="font-semibold">Giáo dục trực tuyến</div>
+            <div className="flex flex-col text-[12px] text-yellow-300 sm:text-xl">
+              <div className="font-extrabold">EasyEdu</div>
+              <div className="font-bold">LEAD UR DREAM</div>
             </div>
           </div>
           <div className="flex items-center justify-center gap-x-3">
