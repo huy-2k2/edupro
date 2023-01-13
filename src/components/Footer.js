@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <div className="flex flex-col items-center px-5 py-8 border-t">
       <div className="inline-flex items-center justify-center mx-auto gap-x-3">
-        <div className="flex items-center justify-center w-10 h-10 text-lg border rounded-full text-primary">
+        <div className="flex items-center justify-center w-10 h-10 text-lg border rounded-full text-[#28b1ff]">
           <i className="fa-brands fa-facebook-f"></i>
         </div>
         <div className="flex items-center justify-center w-10 h-10 text-lg text-gray-800 border rounded-full">

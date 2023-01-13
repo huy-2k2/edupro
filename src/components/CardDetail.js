@@ -10,7 +10,7 @@ function DetailText({ title, content, link, small }) {
       <a
         className={`${
           small ? "text-base font-medium" : "text-lg font-semibold"
-        }  capitalize ${link ? "text-primary" : "pointer-events-none"}`}
+        }  capitalize ${link ? "text-dark-primary" : "pointer-events-none"}`}
         target="_blank"
         rel="noreferrer"
         href={link || "#"}

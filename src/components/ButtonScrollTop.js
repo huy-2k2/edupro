@@ -17,7 +17,7 @@ export default function ButtonScrollTop() {
       onClick={handleClickScroll}
       className={`${
         display ? "fixed" : "hidden"
-      } right-0  z-50 flex items-center justify-center w-10 h-10 -translate-y-1/2 bg-[#28b1ff] rounded-full top-1/2 text-white cursor-pointer`}
+      } right-0  z-50 flex items-center justify-center w-10 h-10 -translate-y-1/2 bg-dark-primary rounded-full top-1/2 text-white cursor-pointer`}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

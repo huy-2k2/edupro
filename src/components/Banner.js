@@ -4,7 +4,7 @@ import Slider from "./Slider";
 import CountAuto from "./CountAuto";
 export default function Banner() {
   return (
-    <div className="relative lg:bg-blue-300">
+    <div className="relative lg:bg-secondary">
       <div className="absolute top-0 left-0 right-0 z-10 hidden h-10 bg-gray-500 bg-opacity-50 lg:block"></div>
       <div className="w-[1400px] mx-auto max-w-full px-5 py-2 flex gap-x-5 pt-6">
         <div className="w-[300px] flex-shrink-0 hidden lg:block">
@@ -51,7 +51,7 @@ export default function Banner() {
               src="images/credential.png"
               alt=""
             />
-            <button className="w-full p-3 font-semibold text-white uppercase rounded-md bg-primary">
+            <button className="w-full p-3 font-semibold text-white uppercase rounded-md bg-dark-primary">
               tải ứng dụng
             </button>
           </div>
@@ -60,11 +60,11 @@ export default function Banner() {
       <div className="px-5">
         <div
           className="lg:translate-y-1/2 w-[1400px] mx-auto max-w-full rounded-md py-2 sm:py-4 px-4 sm:px-8 flex justify-center gap-x-5 sm:gap-x-20 lg:gap-x-0 lg:justify-between items-center"
-          style={{ backgroundImage: `url("images/banner/banner_bg.jpg")` }}
+          style={{ backgroundImage: `url("images/banner/banner_bg.png")` }}
         >
           <div className="flex items-center justify-center gap-x-3">
             <img
-              className="w-[50px] sm:w-auto object-cover"
+              className="w-[50px] sm:w-auto max-h-full object-cover"
               src="images/tradition.png"
               alt=""
             />

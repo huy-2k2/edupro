@@ -76,7 +76,7 @@ export default function MenuSmail({ setMenuClick }) {
                     onClick={() => setChildIndex(_current_index)}
                     className={`px-4 py-2 text-sm font-semibold min-w-[150px]  capitalize flex items-center justify-center rounded-md ${
                       _current_index === childIndex
-                        ? "text-white bg-[#28b1ff]"
+                        ? "text-white bg-primary"
                         : "text-gray-600 bg-gray-200"
                     } cursor-pointer`}
                   >
@@ -88,7 +88,7 @@ export default function MenuSmail({ setMenuClick }) {
             <div>
               <div className="text-[16px] font-semibold px-5 py-3 relative">
                 <span className="ml-2">{data[index].title}</span>
-                <span className="absolute left-0 w-[10px] -translate-y-1/2 top-1/2 bg-[#28b1ff] h-3/4 rounded-tr-[5px] rounded-br-[5px]"></span>
+                <span className="absolute left-0 w-[10px] -translate-y-1/2 top-1/2 bg-primary h-3/4 rounded-tr-[5px] rounded-br-[5px]"></span>
               </div>
               <div className="flex flex-col px-5 py-2 gap-y-6">
                 {data[index].item[childIndex].item1.map((data3) => (

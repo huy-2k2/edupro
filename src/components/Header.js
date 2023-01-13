@@ -131,7 +131,7 @@ export default function Header() {
           /> */}
           <button
             className={`text-white font-semibold rounded-md px-4 py-2 min-w-[100px] ${
-              user ? "bg-yellow-500" : "bg-green-500"
+              user ? "bg-yellow-500" : "bg-dark-primary"
             }`}
           >
             {user ? "Đăng xuất" : "Đăng nhập"}

@@ -60,7 +60,7 @@ export default function PostDetailPage() {
               "Học thêm kỹ năng mềm, như giao tiếp, rồi tìm tòi về cách gửi Mail lịch sự để khi chúng ta gửi CV xin việc gì đó thì cũng biết cách để nhà tuyển dụng họ đánh giá cao hơn những người chỉ biết gửi Email chứ ko biết đầu đuôi gì cả.",
             ]}
           ></PostContent>
-          <div className="border-l-8 border-l-[#28b1ff] px-6 py-3 shadow-xl">
+          <div className="px-6 py-3 border-l-8 shadow-xl border-l-primary">
             <p className="text-xl font-semibold uppercase">dành cho bạn</p>
             <p className="mt-3">
               Mình có khoá học HTML CSS từ cơ bản tới nâng cao cho người mới,

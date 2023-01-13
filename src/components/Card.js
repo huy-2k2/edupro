@@ -34,7 +34,7 @@ export default function Card({ course }) {
           <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 line-clamp-1">
             <p>
               Giáo viên:{" "}
-              <span className="font-semibold text-[#28b1ff] capitalize">
+              <span className="font-semibold capitalize text-dark-primary">
                 {course.teacher}
               </span>
             </p>
@@ -46,7 +46,7 @@ export default function Card({ course }) {
                 href={central.link}
                 target="_blank"
                 rel="noreferrer"
-                className="text-[#28b1ff] uppercase font-semibold"
+                className="font-semibold uppercase text-dark-primary"
               >
                 {central.name}
               </a>
@@ -59,14 +59,14 @@ export default function Card({ course }) {
                   bỏ thích
                 </div>
               ) : (
-                <div className="px-4 py-2 text-center text-white cursor-pointer bg-pink-500 rounded-md min-w-[100px]">
+                <div className="px-4 py-2 text-center text-white cursor-pointer bg-dark-primary rounded-md min-w-[100px]">
                   yêu thích
                 </div>
               )}
             </div>
             <Link
               to={`/course/${course.id}`}
-              className="text-center px-4 py-2 text-white rounded-md bg-primary min-w-[100px]"
+              className="text-center px-4 py-2 text-white rounded-md bg-dark-primary min-w-[100px]"
             >
               chi tiết
             </Link>
